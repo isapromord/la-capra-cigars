@@ -37,7 +37,7 @@ export default function App() {
       <Navbar />
 
       {/* MAIN CONTENT */}
-      <main className="w-full pt-24 sm:pt-28 md:pt-32 bg-transparent flex-1 relative z-10">
+      <main className="w-full pt-32 sm:pt-40 md:pt-46 bg-transparent flex-1 relative z-10">
         {/* HERO SECTION EDITORIAL */}
         <Hero />
 

@@ -13,25 +13,25 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-[#141312]/75 backdrop-blur-xl border-b border-[#4d4635]/25 shadow-[0_6px_25px_rgba(0,0,0,0.5)] transition-all">
-      <div className="min-h-[88px] sm:min-h-[104px] md:min-h-[114px] max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 flex items-center justify-between py-2 sm:py-3">
+    <header className="fixed top-0 w-full z-50 bg-[#141312]/80 backdrop-blur-xl border-b border-[#4d4635]/25 shadow-[0_8px_30px_rgba(0,0,0,0.6)] transition-all">
+      <div className="min-h-[110px] sm:min-h-[135px] md:min-h-[150px] max-w-[1520px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 flex items-center justify-between py-3 sm:py-4">
         
-        {/* Brand & Official Logo - Enlarged twice as big for prominent luxury presence */}
+        {/* Brand & Official Logo - Doubled in size for bold, grand luxury stature */}
         <a 
-          className="flex items-center gap-3.5 sm:gap-4.5 focus:outline-none group py-1 shrink-0 mr-4 sm:mr-8 lg:mr-10" 
+          className="flex items-center gap-4 sm:gap-6 focus:outline-none group py-1 shrink-0 mr-4 sm:mr-8 lg:mr-10" 
           href="#"
         >
           <img 
             alt="La Capra Cigars Logo Oficial" 
             referrerPolicy="no-referrer"
-            className="h-18 sm:h-22 md:h-26 w-auto max-w-[150px] sm:max-w-[190px] md:max-w-[220px] object-contain filter drop-shadow-[0_4px_16px_rgba(242,202,80,0.45)] group-hover:scale-105 transition-transform shrink-0" 
+            className="h-28 sm:h-36 md:h-42 w-auto object-contain filter drop-shadow-[0_6px_22px_rgba(242,202,80,0.5)] group-hover:scale-105 transition-transform shrink-0" 
             src={IMAGES.logoOficial} 
           />
           <div className="flex flex-col justify-center">
-            <span className="font-headline-sm text-xl sm:text-2xl md:text-3xl text-[#f2ca50] tracking-[0.18em] uppercase font-bold group-hover:text-[#F4D06F] transition-colors leading-tight whitespace-nowrap">
+            <span className="font-headline-sm text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#f2ca50] tracking-[0.18em] uppercase font-bold group-hover:text-[#F4D06F] transition-colors leading-tight whitespace-nowrap">
               LA CAPRA CIGARS
             </span>
-            <span className="font-label-sm text-[9px] sm:text-[11px] md:text-xs text-[#d0c5af] tracking-[0.26em] uppercase whitespace-nowrap mt-1">
+            <span className="font-label-sm text-xs sm:text-sm md:text-base text-[#d0c5af] tracking-[0.3em] uppercase whitespace-nowrap mt-1 sm:mt-1.5">
               Humo Real Dominicano
             </span>
           </div>

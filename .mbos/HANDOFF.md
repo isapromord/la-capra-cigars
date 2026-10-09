@@ -9,10 +9,13 @@
   - Interactividad con el mouse (brisa atmosférica al mover el cursor).
   - Fondos de secciones (`Hero`, `CatalogoVitolas`, `LoungeSection`, `GuiasAficionado`, `ClubMembresia`) ajustados a transparentes para que el humo viaje nítidamente **detrás de los textos, tarjetas, bloques e imágenes**.
   - Mini-controlador discreto en la esquina inferior izquierda con 3 niveles: **Sutil**, **Elegante**, **Intenso**.
+- **Barra de Navegación & Logo:**
+  - Logo duplicado de tamaño (`h-18` a `h-26` / hasta 220px de ancho) para máxima presencia y legibilidad del emblema dorado.
+  - Altura del header ajustada a `min-h-[88px] sm:min-h-[104px] md:min-h-[114px]` con padding superior en `<main>` para conservar holgura y simetría editorial.
 - **Servidor Local Activo:** Vite corriendo en `http://localhost:3000/`.
 
 ## Próximos Pasos (Roadmap)
-1. **Confirmación Visual del Usuario:** Refrescar `http://localhost:3000/` y validar el efecto de humo y el selector de intensidad.
+1. **Confirmación Visual del Usuario:** Validar el logo ampliado en `http://localhost:3000/`.
 2. **Creación y Push al Repositorio en GitHub:**
    - Cuenta: `isapromord` (https://github.com/isapromord).
    - Comando directo: `gh repo create isapromord/la-capra-cigars --public --source=. --push`.

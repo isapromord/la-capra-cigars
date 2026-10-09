@@ -9,9 +9,9 @@
   - Interactividad con el mouse (brisa atmosférica al mover el cursor).
   - Fondos de secciones (`Hero`, `CatalogoVitolas`, `LoungeSection`, `GuiasAficionado`, `ClubMembresia`) ajustados a transparentes para que el humo viaje nítidamente **detrás de los textos, tarjetas, bloques e imágenes**.
   - Mini-controlador discreto en la esquina inferior izquierda con 3 niveles: **Sutil**, **Elegante**, **Intenso**.
-- **Barra de Navegación & Logo:**
-  - Se descubrió que el archivo PNG original contenía más de un 65% de margen transparente vacío (199px arriba y 237px abajo) que miniaturizaba el renderizado real. Se recortó milimétricamente al marco exacto del emblema (`public/logo-oficial.png`, 274x230 puros de icono) y se magnificó a `h-24 sm:h-28 md:h-34`, multiplicando su presencia visual efectiva por más de 3.5x.
-  - Título ampliado a `text-2xl sm:text-3xl md:text-4xl` con espaciado editorial y subtítulo a `text-sm`.
+- **Barra de Navegación & Footer Calibrados:**
+  - El logo del Footer fue restaurado a su tamaño original equilibrado y limpio (`h-12` a `h-16`).
+  - El logo de la cabecera (Navbar) se calibró con precisión a exactamente el **doble (2x)** de su tamaño original (`h-14` a `h-18` sobre el PNG recortado), con altura de barra elegante (`h-20` a `h-24`), logrando una escala lujosa, visible y armónica sin saturar.
 - **Preparación para Vercel:**
   - `vercel.json` configurado con framework `vite`, rewrites SPA (`/index.html`), cache inmutable para media/video y headers de seguridad.
   - `.npmrc` con `legacy-peer-deps=true` para garantizar instalación automatizada sin conflictos de pares en el runner de Vercel.

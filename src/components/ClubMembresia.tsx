@@ -19,7 +19,7 @@ export const ClubMembresia: React.FC<ClubMembresiaProps> = ({ onShowToast }) => 
   };
 
   return (
-    <section className="w-full py-20 bg-[#141312] relative" id="club">
+    <section className="w-full py-20 bg-transparent relative z-10" id="club">
       <div className="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
         <div className="relative bg-[#0f0e0d] border border-[#4d4635]/40 p-8 md:p-14 shadow-2xl">
           <div className="absolute -top-20 -left-20 w-72 h-72 bg-[#f2ca50]/10 rounded-full blur-[100px] pointer-events-none"></div>

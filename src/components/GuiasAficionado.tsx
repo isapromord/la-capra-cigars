@@ -5,7 +5,7 @@ export const GuiasAficionado: React.FC = () => {
   const [selectedGuia, setSelectedGuia] = useState<(typeof GUÍAS_LIST)[0] | null>(null);
 
   return (
-    <section className="w-full py-20 bg-[#0f0e0d] border-t border-[#4d4635]/30" id="guias">
+    <section className="w-full py-20 bg-transparent border-t border-[#4d4635]/30 relative z-10" id="guias">
       <div className="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
         
         {/* Header */}

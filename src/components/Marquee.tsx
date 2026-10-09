@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Marquee: React.FC = () => {
   return (
-    <div className="w-full bg-[#0f0e0d] py-3.5 border-y border-[#4d4635]/30 overflow-hidden select-none">
+    <div className="w-full bg-[#0f0e0d]/75 backdrop-blur-sm py-3.5 border-y border-[#4d4635]/30 overflow-hidden select-none relative z-10">
       <div className="flex items-center justify-around gap-8 text-[#99907c] uppercase font-label-sm text-xs tracking-[0.3em] opacity-85 whitespace-nowrap px-4">
         <span>✦ Valle Del Cibao</span>
         <span>•</span>

@@ -1,18 +1,20 @@
 import React, { useRef, useState, useEffect } from 'react';
 
 /**
- * AmbientSmoke — Refined Luxury Cigar Smoke (Seamless Full Page)
+ * AmbientSmoke — Refined Luxury Cigar Smoke (Seamless Full Page + Interactive Breeze)
  * Delicate, sinuous tendrils of authentic cigar smoke rising slowly across the entire screen.
  * 
- * Key refinements:
+ * Features:
  * 1. 100% full-screen continuous layer — no columns, blocks, or visible vertical seams.
- * 2. Ultra-subtle, elegant opacity (calibrated to delicate luxury cigar references).
- * 3. Screen blend mode on deep black backdrop for feather-soft, organic transparency.
- * 4. Radial gradient mask prevents any rectangular edge cutoffs.
+ * 2. Interactive Breeze Physics: Smooth, GPU-accelerated parallax inertia that sways
+ *    the smoke gently in response to cursor movement (like air drifting in a cigar lounge).
+ * 3. High performance: Uses hardware video decoding (H.264 FastStart, ~3.9 MB),
+ *    non-blocking async stream, and automatically pauses if the user switches browser tabs.
  */
 export const AmbientSmoke: React.FC = () => {
   const [intensity, setIntensity] = useState<'sutil' | 'elegante' | 'intenso'>('elegante');
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   // Calibrated delicate opacities (soft, refined, non-intrusive)
   const opacityMap = {
@@ -30,16 +32,70 @@ export const AmbientSmoke: React.FC = () => {
     }
   }, []);
 
+  // Smooth Interactive Breeze Physics (Mouse Hover Reactivity)
+  useEffect(() => {
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let currentRotate = 0;
+    let animId: number;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const { innerWidth, innerHeight } = window;
+      // Normalized between -1 and 1
+      const normX = (e.clientX / innerWidth - 0.5) * 2;
+      const normY = (e.clientY / innerHeight - 0.5) * 2;
+
+      // Gentle displacement range: up to 38px horizontal breeze, 18px vertical, subtle tilt
+      targetX = normX * 38;
+      targetY = normY * 18;
+    };
+
+    const updatePhysics = () => {
+      // Fluid spring/lerp easing for natural air resistance and inertia
+      currentX += (targetX - currentX) * 0.04;
+      currentY += (targetY - currentY) * 0.04;
+      currentRotate += ((targetX * 0.03) - currentRotate) * 0.04;
+
+      if (containerRef.current) {
+        containerRef.current.style.transform = `translate3d(${currentX.toFixed(2)}px, ${currentY.toFixed(2)}px, 0) rotate(${currentRotate.toFixed(2)}deg) scale(1.05)`;
+      }
+
+      animId = requestAnimationFrame(updatePhysics);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    animId = requestAnimationFrame(updatePhysics);
+
+    // Resource Optimization: Pause video decode when tab is in background
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        videoRef.current?.pause();
+      } else {
+        videoRef.current?.play().catch(() => {});
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      cancelAnimationFrame(animId);
+    };
+  }, []);
+
   return (
     <>
       {/* 
-        UNIFIED FULL-PAGE SMOKE LAYER
-        - Covers 100% of viewport seamlessly (fixed inset-0 w-full h-full)
+        UNIFIED FULL-PAGE SMOKE LAYER WITH BREEZE PARALLAX
+        - inset-[-4%] w-[108%] h-[108%] gives 4% overflow padding so sway never clips
         - z-[1] places it behind all editorial texts, vitola cards, and blocks
         - pointer-events-none guarantees zero interaction block
       */}
       <div 
-        className="fixed inset-0 w-full h-full pointer-events-none z-[1] overflow-hidden select-none"
+        ref={containerRef}
+        className="fixed inset-[-4%] w-[108%] h-[108%] pointer-events-none z-[1] overflow-hidden select-none will-change-transform"
         aria-hidden="true"
         style={{
           WebkitMaskImage: 'radial-gradient(ellipse at 50% 50%, black 65%, transparent 100%)',
@@ -52,6 +108,7 @@ export const AmbientSmoke: React.FC = () => {
           loop
           muted
           playsInline
+          preload="metadata"
           className="w-full h-full object-cover mix-blend-screen transition-opacity duration-700 pointer-events-none"
           style={{
             opacity: currentOpacity,

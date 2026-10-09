@@ -19,6 +19,6 @@
 ## Próximos Pasos (Roadmap)
 1. **Refinamiento de Contenido:** Revisión visual y ajustes de textos o vitolas según indicaciones del usuario.
 2. **Creación de Repositorio en GitHub:**
-   - Cuenta: `isapromord` (`isapromord-eng`).
-   - Nombre sugerido de repo: `la-capra-cigars` (o `lacapra-cigars`).
-   - Git init -> commit -> `gh repo create isapromord-eng/la-capra-cigars --public --push`.
+   - Cuenta: `isapromord` (https://github.com/isapromord).
+   - Nombre de repo: `isapromord/la-capra-cigars`.
+   - Comando directo: `gh repo create isapromord/la-capra-cigars --public --source=. --push`.

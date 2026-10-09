@@ -50,5 +50,5 @@ la-capra-cigars/
 ```
 
 ## 5. Destino de Despliegue
-- **Localhost:** Puerto 3000 o servidor local estático.
-- **GitHub Target:** Organización / Cuenta `isapromord` (`isapromord-eng`).
+- **Localhost:** Puerto 8080 (servidor local activo).
+- **GitHub Target:** Usuario `isapromord` (https://github.com/isapromord).

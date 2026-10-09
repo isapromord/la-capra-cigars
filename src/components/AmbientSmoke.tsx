@@ -88,14 +88,14 @@ export const AmbientSmoke: React.FC = () => {
   return (
     <>
       {/* 
-        UNIFIED FULL-PAGE SMOKE LAYER WITH BREEZE PARALLAX
-        - inset-[-4%] w-[108%] h-[108%] gives 4% overflow padding so sway never clips
-        - z-[1] places it behind all editorial texts, vitola cards, and blocks
-        - pointer-events-none guarantees zero interaction block
+        UNIFIED FULL-PAGE SMOKE LAYER WITH BREEZE PARALLAX (ON TOP OF CONTENT)
+        - z-30 floats gently ON TOP of letters, cards, blocks, and images
+        - pointer-events-none ensures 100% of clicks pass through seamlessly
+        - mix-blend-screen overlays only luminous smoke curls without dimming text
       */}
       <div 
         ref={containerRef}
-        className="fixed inset-[-4%] w-[108%] h-[108%] pointer-events-none z-[1] overflow-hidden select-none will-change-transform"
+        className="fixed inset-[-4%] w-[108%] h-[108%] pointer-events-none z-30 overflow-hidden select-none will-change-transform"
         aria-hidden="true"
         style={{
           WebkitMaskImage: 'radial-gradient(ellipse at 50% 50%, black 65%, transparent 100%)',
@@ -117,10 +117,6 @@ export const AmbientSmoke: React.FC = () => {
         >
           <source src="/cigar-smoke-pure.mp4" type="video/mp4" />
         </video>
-
-        {/* Soft edge feathering so smoke dissolves seamlessly at the very top and bottom */}
-        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-[#141312] via-[#141312]/40 to-transparent pointer-events-none" />
-        <div className="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-[#141312] via-[#141312]/40 to-transparent pointer-events-none" />
       </div>
 
       {/* 

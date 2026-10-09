@@ -12,13 +12,11 @@
 - **Barra de Navegación & Logo:**
   - Logo duplicado de tamaño (`h-18` a `h-26` / hasta 220px de ancho) para máxima presencia y legibilidad del emblema dorado.
   - Altura del header ajustada a `min-h-[88px] sm:min-h-[104px] md:min-h-[114px]` con padding superior en `<main>` para conservar holgura y simetría editorial.
-- **Repositorio Remoto en GitHub:**
-  - URL: **`https://github.com/isapromord/la-capra-cigars`**
-  - Rama: `main`
-  - Estado: Sincronizado y publicado con documentación de autor en `README.md`.
-- **Servidor Local Activo:** Vite corriendo en `http://localhost:3000/`.
+- **Preparación para Vercel:**
+  - `vercel.json` configurado con framework `vite`, rewrites SPA (`/index.html`), cache inmutable para media/video y headers de seguridad.
+  - `.npmrc` con `legacy-peer-deps=true` para garantizar instalación automatizada sin conflictos de pares en el runner de Vercel.
+  - `vite.config.ts` optimizado con `process.cwd()` (cero warnings).
+  - Repositorio remoto sincronizado en GitHub: **`https://github.com/isapromord/la-capra-cigars`**.
 
 ## Estado del Proyecto
-- **100% Completo y Publicado en GitHub.**
-- Importación desde Google AI Studio realizada con éxito.
-- Refinamientos editoriales, animaciones Ken Burns, logo duplicado y motor de humo real completados.
+- **100% Preparado y Listo para Desplegar en Vercel con 1 Clic.**

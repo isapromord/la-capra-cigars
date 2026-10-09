@@ -1,0 +1,12 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Dependencies & Build
+node_modules/
+dist/
+.cache/
+
+# Environment
+.env
+.env.local

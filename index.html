@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Capra Cigars — Humo Real Dominicano | Catálogo de Vitolas & Lounges</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="La Capra Cigars: Cava privada de tabacos premium añejados a mano en Santiago de los Caballeros, República Dominicana. Catálogo de vitolas de autor, lounges exclusivos y membresía de cava.">
+  <meta name="keywords" content="La Capra Cigars, puros dominicanos, vitolas artesanales, cigar lounge Santo Domingo, tabaco premium Cibao, humidor cedro, cigarros de lujo">
+  <meta name="author" content="La Capra Cigars SRL">
+  <meta property="og:title" content="La Capra Cigars — Humo Real Dominicano">
+  <meta property="og:description" content="Cava privada de tabacos añejados con devoción litúrgica en Santiago de los Caballeros. Ediciones limitadas hechas a mano.">
+  <meta property="og:image" content="assets/images/hero-puro-mano.jpg">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-emblem.png">
+
+  <!-- Google Fonts & Material Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#1d1b1a",
+            "surface-container-lowest": "#0f0e0d",
+            "outline": "#99907c",
+            "on-tertiary": "#3f2e00",
+            "on-secondary-fixed": "#370e00",
+            "gold-leaf-bright": "#F4D06F",
+            "error-container": "#93000a",
+            "secondary-fixed": "#ffdbce",
+            "surface-container-highest": "#363433",
+            "surface-container": "#211f1e",
+            "on-tertiary-fixed-variant": "#5b4300",
+            "surface-tint": "#e9c349",
+            "surface": "#141312",
+            "on-tertiary-container": "#594100",
+            "on-primary": "#3c2f00",
+            "secondary-fixed-dim": "#ffb59a",
+            "on-surface-variant": "#d0c5af",
+            "tertiary-fixed-dim": "#f5be37",
+            "cigar-wrapper-maduro": "#2B1A12",
+            "outline-variant": "#4d4635",
+            "inverse-surface": "#e6e1df",
+            "primary": "#f2ca50",
+            "on-surface": "#e6e1df",
+            "tertiary-fixed": "#ffdf9e",
+            "gold-burnished": "#A3802A",
+            "inverse-primary": "#735c00",
+            "inverse-on-surface": "#32302f",
+            "tertiary": "#fec63e",
+            "primary-fixed-dim": "#e9c349",
+            "band-emerald": "#1B4D3E",
+            "on-secondary": "#5a1b00",
+            "on-error": "#690005",
+            "on-background": "#e6e1df",
+            "cedar-raw": "#8E5B3D",
+            "background": "#141312",
+            "on-primary-fixed": "#241a00",
+            "on-error-container": "#ffdad6",
+            "surface-container-high": "#2b2a28",
+            "on-primary-fixed-variant": "#574500",
+            "on-secondary-container": "#ff9c75",
+            "primary-container": "#d4af37",
+            "cedar-light": "#E8D5B5",
+            "surface-variant": "#363433",
+            "secondary": "#ffb59a",
+            "primary-fixed": "#ffe088",
+            "secondary-container": "#7a300f",
+            "surface-bright": "#3b3937",
+            "on-primary-container": "#554300",
+            "band-scarlet": "#A31621",
+            "charcoal-char": "#1B1918",
+            "surface-dim": "#141312",
+            "on-secondary-fixed-variant": "#7a300f",
+            "tertiary-container": "#dfab22",
+            "on-tertiary-fixed": "#261a00",
+            "error": "#ffb4ab"
+          },
+          fontFamily: {
+            "headline-xl": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "title-lg": ["Playfair Display", "serif"],
+            "body-lg": ["Cinzel", "serif"],
+            "body-md": ["Cinzel", "serif"],
+            "body-sm": ["Cinzel", "serif"],
+            "label-lg": ["Cinzel", "serif"],
+            "label-md": ["Cinzel", "serif"],
+            "label-sm": ["Cinzel", "serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Modular Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- NAVBAR HEADER -->
+  <header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_20px_rgba(0,0,0,0.65)] transition-all">
+    <div class="h-20 max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12 flex items-center justify-between">
+      <!-- Brand & Official Logo -->
+      <a class="flex items-center gap-3 focus:outline-none group" href="#">
+        <img alt="La Capra Cigars Logo Oficial" class="h-12 w-auto object-contain filter drop-shadow group-hover:scale-105 transition-transform shrink-0" src="assets/images/logo-oficial.png">
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-lg md:text-xl text-primary tracking-[0.2em] uppercase font-bold group-hover:text-gold-leaf-bright transition-colors">LA CAPRA CIGARS</span>
+          <span class="font-label-sm text-[9px] md:text-[10px] text-on-surface-variant tracking-[0.24em] uppercase">Humo Real • Santiago R.D.</span>
+        </div>
+      </a>
+      
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-8">
+        <a class="font-label-md text-xs uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-1" href="#catalogo">Catálogo de Vitolas</a>
+        <a class="font-label-md text-xs uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-1" href="#artesania">Cava & Taller</a>
+        <a class="font-label-md text-xs uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-1" href="#lounges">Lounge & Puntos de Venta</a>
+        <a class="font-label-md text-xs uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-1" href="#guias">Guías del Aficionado</a>
+        <a class="font-label-md text-xs uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-1" href="#club">Reservas & Concierge</a>
+      </nav>
+
+      <!-- Action Button CTA & Mobile Hamburger -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-primary-container hover:from-gold-leaf-bright hover:to-primary text-on-primary font-label-sm text-[11px] font-semibold uppercase px-4 py-2.5 tracking-[0.18em] shadow-lg transition-all duration-300" href="#lounges">
+          <span class="material-symbols-outlined text-sm">storefront</span>
+          <span>Localizar Lounge</span>
+        </a>
+
+        <!-- Hamburger Button for Mobile/Tablet -->
+        <button id="mobile-menu-btn" class="xl:hidden p-2 text-primary hover:text-gold-leaf-bright transition-colors focus:outline-none" aria-label="Abrir Menú">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 bg-surface-container-lowest/98 backdrop-blur-2xl hidden flex-col justify-between p-6 overflow-y-auto">
+    <div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+      <div class="flex items-center gap-3">
+        <img alt="La Capra Cigars" class="h-10 w-auto" src="assets/images/logo-emblem.png">
+        <span class="font-headline-sm text-base text-primary uppercase font-bold tracking-widest">LA CAPRA CIGARS</span>
+      </div>
+      <button id="close-mobile-menu" class="p-2 text-on-surface-variant hover:text-primary focus:outline-none" aria-label="Cerrar Menú">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+    
+    <div class="flex flex-col gap-6 py-8">
+      <a class="mobile-nav-link font-headline-sm text-xl text-on-surface hover:text-primary transition-colors uppercase tracking-wider" href="#catalogo">Catálogo de Vitolas</a>
+      <a class="mobile-nav-link font-headline-sm text-xl text-on-surface hover:text-primary transition-colors uppercase tracking-wider" href="#artesania">Cava & Taller Artesanal</a>
+      <a class="mobile-nav-link font-headline-sm text-xl text-on-surface hover:text-primary transition-colors uppercase tracking-wider" href="#lounges">Lounge & Puntos de Venta</a>
+      <a class="mobile-nav-link font-headline-sm text-xl text-on-surface hover:text-primary transition-colors uppercase tracking-wider" href="#guias">Guías del Aficionado</a>
+      <a class="mobile-nav-link font-headline-sm text-xl text-primary hover:text-gold-leaf-bright transition-colors uppercase tracking-wider" href="#club">Reservas & Concierge</a>
+    </div>
+
+    <div class="border-t border-outline-variant/30 pt-6 flex flex-col gap-3 text-xs text-on-surface-variant">
+      <p class="font-label-sm text-[10px] uppercase tracking-widest text-primary">Cava Principal: Santiago de los Caballeros, R.D.</p>
+      <a href="tel:+18095822277" class="hover:text-primary transition-colors flex items-center gap-2">
+        <span class="material-symbols-outlined text-sm text-primary">call</span> +1 (809) 582-CAPRA
+      </a>
+    </div>
+  </div>
+
+  <main class="w-full pt-20 bg-background">
+
+    <!-- HERO SECTION EDITORIAL -->
+    <section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-lowest via-surface to-background py-16 lg:py-24 border-b border-outline-variant/20">
+      <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[750px] h-[550px] bg-primary/10 rounded-full blur-[160px] pointer-events-none"></div>
+      <div class="absolute right-0 top-1/4 w-[450px] h-[450px] bg-cigar-wrapper-maduro/40 rounded-full blur-[140px] pointer-events-none"></div>
+      
+      <div class="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Editorial Statement -->
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-8 h-[1px] bg-primary"></span>
+              <span class="font-label-sm text-xs uppercase tracking-[0.28em] text-primary">Edición Limitada Hecho a Mano • Valle del Cibao</span>
+            </div>
+            <h1 class="font-headline-xl text-4xl sm:text-5xl lg:text-6xl text-on-surface leading-[1.1] tracking-[-0.02em]">
+              La Capra Cigars — <span class="italic text-primary font-normal">Humo Real Dominicano</span>
+            </h1>
+            <p class="font-body-lg text-base lg:text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+              Cava privada de tabacos añejados con devoción litúrgica en Santiago de los Caballeros. Cada vitola representa el pináculo de la tradición artesanal dominicana: ligadas reservadas, tiro milimétrico y anillado de colección para los paladares más exigentes del mundo.
+            </p>
+            
+            <!-- Buttons CTA -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a class="inline-flex items-center justify-center bg-primary hover:bg-gold-leaf-bright text-on-primary font-label-md text-xs uppercase px-7 py-3.5 tracking-[0.2em] shadow-[0_4px_20px_rgba(242,202,80,0.3)] transition-all duration-300 font-bold" href="#catalogo">
+                Explorar Catálogo Digital
+              </a>
+              <a class="inline-flex items-center justify-center bg-surface-container-high hover:bg-surface-bright text-on-surface border border-outline-variant/60 font-label-md text-xs uppercase px-6 py-3.5 tracking-[0.18em] transition-all duration-300" href="#lounges">
+                <span class="text-primary mr-2">✦</span> Visitar Nuestro Lounge
+              </a>
+            </div>
+
+            <!-- Strip de Indicadores de Cata & Calidad -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-outline-variant/30 max-w-xl">
+              <div>
+                <p class="font-headline-sm text-2xl text-primary font-semibold">100%</p>
+                <p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Tripa Larga Seleccionada</p>
+              </div>
+              <div>
+                <p class="font-headline-sm text-2xl text-primary font-semibold">5 Años</p>
+                <p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Añejamiento en Fardo</p>
+              </div>
+              <div>
+                <p class="font-headline-sm text-2xl text-primary font-semibold">70% HR</p>
+                <p class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider mt-1">Cava Cedro Español</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asymmetric Hero Visuals -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative w-full aspect-[4/5] max-w-[480px] mx-auto">
+              <!-- Detalle macro anilla real en mano -->
+              <div class="w-full h-full bg-surface-container-lowest border border-outline-variant/40 shadow-2xl overflow-hidden group relative">
+                <img alt="Puro La Capra en mano con anilla de oro y azul de Edición Limitada" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-95" src="assets/images/hero-puro-mano.jpg">
+                <div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+                <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between">
+                  <div>
+                    <span class="font-label-sm text-[10px] uppercase text-primary tracking-widest block">Anilla de Autor</span>
+                    <h3 class="font-headline-sm text-xl text-on-surface">Edición Limitada Oro & Azul</h3>
+                  </div>
+                  <span class="px-3 py-1 bg-cigar-wrapper-maduro text-primary font-label-sm text-[10px] uppercase tracking-wider border border-primary/30">Capa Añejada</span>
+                </div>
+              </div>
+              
+              <!-- Overlapping Official Emblem -->
+              <div class="absolute -top-6 -right-6 w-32 h-44 bg-surface-container-lowest/95 backdrop-blur-md border border-primary/50 shadow-2xl p-2 flex flex-col items-center justify-center text-center">
+                <img alt="Sello Oficial La Capra Cigars" class="w-24 h-28 object-contain filter drop-shadow-md group-hover:scale-105 transition-transform duration-500" src="assets/images/logo-emblem.png">
+                <span class="font-label-sm text-[8px] text-primary uppercase tracking-[0.2em] mt-1 font-semibold">Sello Oficial</span>
+              </div>
+              
+              <!-- Badge Flotante Artesanal -->
+              <div class="absolute -bottom-4 -left-4 bg-surface-container-high/90 backdrop-blur-md px-4 py-2 border border-outline-variant/60 shadow-lg flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="font-label-sm text-[10px] text-on-surface uppercase tracking-wider">Cava República Dominicana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE CAVA STATEMENT -->
+    <div class="w-full bg-surface-container-lowest py-3 border-y border-outline-variant/30 overflow-hidden select-none">
+      <div class="flex items-center justify-around gap-8 text-outline uppercase font-label-sm text-xs tracking-[0.3em] opacity-85 whitespace-nowrap">
+        <span>✦ Valle Del Cibao</span>
+        <span>•</span>
+        <span>Capa San Andrés & Habano</span>
+        <span>•</span>
+        <span>Entubado Manual Tradicional</span>
+        <span>•</span>
+        <span>Guillotina de Doble Hoja</span>
+        <span>•</span>
+        <span>Control Higrométrico 70% HR</span>
+        <span>•</span>
+        <span>Cigar Lounge Concierge</span>
+      </div>
+    </div>
+
+    <!-- CATÁLOGO DIGITAL DE SELECCIÓN PREMIUM -->
+    <section class="w-full py-20 bg-surface" id="catalogo">
+      <div class="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <div class="flex items-center gap-2 text-primary mb-2">
+              <span class="material-symbols-outlined text-sm">menu_book</span>
+              <span class="font-label-sm text-xs uppercase tracking-[0.25em]">Catálogo de Vitolas de Autor</span>
+            </div>
+            <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface">Compendio de Selección Privada</h2>
+            <p class="font-body-md text-sm text-on-surface-variant mt-2 max-w-xl">
+              Fichas técnicas y sensoriales elaboradas por nuestros maestros ligadores. Disponibilidad por asignación en cava o en boutiques asociadas.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="font-label-sm text-xs uppercase tracking-widest text-on-surface-variant">Lotes Activos:</span>
+            <span class="px-3 py-1 bg-surface-container text-primary font-label-sm text-xs border border-primary/20">Cosecha 2023 - 2024</span>
+          </div>
+        </div>
+
+        <!-- Grid 3 Vitolas con imágenes diferenciadas -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- VITOLA 1: Maduro Especial -->
+          <article class="bg-surface-container-low border border-outline-variant/30 flex flex-col shadow-xl hover:border-primary/50 transition-all duration-300 group">
+            <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+              <img alt="La Capra Maduro con Don Julio Reposado" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/images/maduro-don-julio.jpg">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-cigar-wrapper-maduro text-primary font-label-sm text-[10px] uppercase px-2.5 py-1 tracking-widest border border-primary/30">Maduro Especial</span>
+                <span class="bg-primary text-on-primary font-label-sm text-[10px] uppercase px-2 py-1 tracking-widest font-bold">Cava Barrica</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-surface-container-highest/90 backdrop-blur-sm px-3 py-1 border border-outline-variant/40">
+                <span class="font-label-sm text-[10px] text-on-surface uppercase tracking-wider">Cepo 58 x 5.5"</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1 justify-between gap-5">
+              <div>
+                <div class="flex items-baseline justify-between">
+                  <h3 class="font-headline-sm text-2xl text-on-surface">Toro Maduro Barrica</h3>
+                  <span class="font-label-sm text-xs text-primary uppercase tracking-widest font-bold">Reserva Oro</span>
+                </div>
+                <p class="font-label-sm text-[11px] text-on-surface-variant uppercase mt-1 tracking-wider">Cinta Dorada • Tabaco Estacionado</p>
+                <!-- Barra de Fortaleza -->
+                <div class="flex items-center justify-between my-4 bg-surface-container p-2.5 border border-outline-variant/20">
+                  <span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Fortaleza</span>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-surface-container-highest"></span>
+                    <span class="font-label-sm text-[10px] text-on-surface ml-2">Media - Fuerte</span>
+                  </div>
+                </div>
+                <!-- Especificaciones Técnicas de Cata -->
+                <div class="grid grid-cols-2 gap-2 text-xs bg-surface-container-lowest p-3 border border-outline-variant/20 mb-4 font-body-sm">
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">CAPA</span> San Andrés Maduro</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">CAPOTE</span> Olor Dominicano</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">TRIPA</span> Piloto & Criollo 98</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">TIEMPO</span> 75 - 90 min</div>
+                </div>
+                <!-- Notas Sensoriales & Maridaje -->
+                <div class="flex flex-col gap-2">
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    <strong class="text-primary font-label-sm tracking-wider uppercase block text-[10px]">Notas Sensoriales:</strong>
+                    Cacao puro tostado, cuero añejo, madera de roble, café espresso intenso y estallido dulce de melaza con pimienta negra final.
+                  </p>
+                  <p class="text-xs text-on-surface-variant mt-1 leading-relaxed bg-surface-container p-2 border-l-2 border-primary">
+                    <strong class="text-primary font-label-sm tracking-wider uppercase block text-[10px]">Maridaje de Autor:</strong>
+                    Tequila reposado de alta gama (Don Julio 1942) o Ron Dominicano Extraviejo.
+                  </p>
+                </div>
+              </div>
+              <a class="w-full text-center py-2.5 bg-primary hover:bg-gold-leaf-bright text-on-primary font-label-sm text-[11px] uppercase tracking-[0.2em] font-bold transition-all shadow-md mt-2" href="#club">
+                Solicitar Asignación / Consultar Disponibilidad
+              </a>
+            </div>
+          </article>
+
+          <!-- VITOLA 2: Habano 2023 Cava Box -->
+          <article class="bg-surface-container-low border border-outline-variant/30 flex flex-col shadow-xl hover:border-primary/50 transition-all duration-300 group">
+            <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+              <img alt="La Capra Habano 2023 en cofre de madera con cintas rojas" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/images/habano-2023-cofre.jpg">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-band-scarlet text-on-surface font-label-sm text-[10px] uppercase px-2.5 py-1 tracking-widest">Habano 2023</span>
+                <span class="bg-surface-variant text-on-surface font-label-sm text-[10px] uppercase px-2 py-1 tracking-widest border border-outline-variant/30">Cinta Carmesí</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-surface-container-highest/90 backdrop-blur-sm px-3 py-1 border border-outline-variant/40">
+                <span class="font-label-sm text-[10px] text-on-surface uppercase tracking-wider">Cepo 52 x 6.0"</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1 justify-between gap-5">
+              <div>
+                <div class="flex items-baseline justify-between">
+                  <h3 class="font-headline-sm text-2xl text-on-surface">Habano Selección Cava</h3>
+                  <span class="font-label-sm text-xs text-primary uppercase tracking-widest font-bold">Cosecha Limitada</span>
+                </div>
+                <p class="font-label-sm text-[11px] text-on-surface-variant uppercase mt-1 tracking-wider">Caja de Cedro • Liga Especial</p>
+                <!-- Barra de Fortaleza -->
+                <div class="flex items-center justify-between my-4 bg-surface-container p-2.5 border border-outline-variant/20">
+                  <span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Fortaleza</span>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-surface-container-highest"></span>
+                    <span class="w-4 h-2 bg-surface-container-highest"></span>
+                    <span class="font-label-sm text-[10px] text-on-surface ml-2">Media Equilibrada</span>
+                  </div>
+                </div>
+                <!-- Especificaciones Técnicas de Cata -->
+                <div class="grid grid-cols-2 gap-2 text-xs bg-surface-container-lowest p-3 border border-outline-variant/20 mb-4 font-body-sm">
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">CAPA</span> Habano Ecuador Claro</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">CAPOTE</span> Corojo Dominicano</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">TRIPA</span> Piloto Cubano Mejorado</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">TIEMPO</span> 60 - 75 min</div>
+                </div>
+                <!-- Notas Sensoriales & Maridaje -->
+                <div class="flex flex-col gap-2">
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    <strong class="text-primary font-label-sm tracking-wider uppercase block text-[10px]">Notas Sensoriales:</strong>
+                    Cedro fresco de caja, corteza de pan rústico, almendras tostadas, nuez moscada y sutiles toques de pimienta blanca.
+                  </p>
+                  <p class="text-xs text-on-surface-variant mt-1 leading-relaxed bg-surface-container p-2 border-l-2 border-primary">
+                    <strong class="text-primary font-label-sm tracking-wider uppercase block text-[10px]">Maridaje de Autor:</strong>
+                    Bourbon Single Barrel o café americano de especialidad lavado.
+                  </p>
+                </div>
+              </div>
+              <a class="w-full text-center py-2.5 bg-primary hover:bg-gold-leaf-bright text-on-primary font-label-sm text-[11px] uppercase tracking-[0.2em] font-bold transition-all shadow-md mt-2" href="#club">
+                Solicitar Asignación / Consultar Disponibilidad
+              </a>
+            </div>
+          </article>
+
+          <!-- VITOLA 3: Connecticut -->
+          <article class="bg-surface-container-low border border-outline-variant/30 flex flex-col shadow-xl hover:border-primary/50 transition-all duration-300 group">
+            <div class="relative w-full aspect-[4/5] bg-surface-container-lowest overflow-hidden">
+              <img alt="La Capra Connecticut con anilla plateada, cinta verde y guillotina" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" src="assets/images/connecticut-anilla.jpg">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+              <div class="absolute top-4 left-4 flex gap-2">
+                <span class="bg-band-emerald text-on-surface font-label-sm text-[10px] uppercase px-2.5 py-1 tracking-widest">Connecticut</span>
+                <span class="bg-surface-variant text-on-surface font-label-sm text-[10px] uppercase px-2 py-1 tracking-widest border border-outline-variant/30">Cinta Esmeralda</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-surface-container-highest/90 backdrop-blur-sm px-3 py-1 border border-outline-variant/40">
+                <span class="font-label-sm text-[10px] text-on-surface uppercase tracking-wider">Cepo 50 x 5.0"</span>
+              </div>
+            </div>
+            <div class="p-6 flex flex-col flex-1 justify-between gap-5">
+              <div>
+                <div class="flex items-baseline justify-between">
+                  <h3 class="font-headline-sm text-2xl text-on-surface">Connecticut Reserva Seda</h3>
+                  <span class="font-label-sm text-xs text-primary uppercase tracking-widest font-bold">Corte Noble</span>
+                </div>
+                <p class="font-label-sm text-[11px] text-on-surface-variant uppercase mt-1 tracking-wider">Plata & Esmeralda • Humo Aterciopelado</p>
+                <!-- Barra de Fortaleza -->
+                <div class="flex items-center justify-between my-4 bg-surface-container p-2.5 border border-outline-variant/20">
+                  <span class="font-label-sm text-[10px] uppercase text-on-surface-variant">Fortaleza</span>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-primary"></span>
+                    <span class="w-4 h-2 bg-surface-container-highest"></span>
+                    <span class="w-4 h-2 bg-surface-container-highest"></span>
+                    <span class="w-4 h-2 bg-surface-container-highest"></span>
+                    <span class="font-label-sm text-[10px] text-on-surface ml-2">Suave - Media</span>
+                  </div>
+                </div>
+                <!-- Especificaciones Técnicas de Cata -->
+                <div class="grid grid-cols-2 gap-2 text-xs bg-surface-container-lowest p-3 border border-outline-variant/20 mb-4 font-body-sm">
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">CAPA</span> Connecticut Shade US</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">CAPOTE</span> San Vicente Dominicano</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">TRIPA</span> Criollo 98 & Olor Suave</div>
+                  <div><span class="text-on-surface-variant font-label-sm text-[10px] block">TIEMPO</span> 50 - 65 min</div>
+                </div>
+                <!-- Notas Sensoriales & Maridaje -->
+                <div class="flex flex-col gap-2">
+                  <p class="text-xs text-on-surface-variant leading-relaxed">
+                    <strong class="text-primary font-label-sm tracking-wider uppercase block text-[10px]">Notas Sensoriales:</strong>
+                    Crema de leche suave, vainilla bourbon, mantequilla clarificada, cedro rubio y toque final de flores silvestres.
+                  </p>
+                  <p class="text-xs text-on-surface-variant mt-1 leading-relaxed bg-surface-container p-2 border-l-2 border-primary">
+                    <strong class="text-primary font-label-sm tracking-wider uppercase block text-[10px]">Maridaje de Autor:</strong>
+                    Espresso doble arábica, Oporto blanco o Champaña brut vintage.
+                  </p>
+                </div>
+              </div>
+              <a class="w-full text-center py-2.5 bg-primary hover:bg-gold-leaf-bright text-on-primary font-label-sm text-[11px] uppercase tracking-[0.2em] font-bold transition-all shadow-md mt-2" href="#club">
+                Solicitar Asignación / Consultar Disponibilidad
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN EXPERIENCIA / HUMIDOR DE MADERA ARTESANAL -->
+    <section class="w-full py-20 bg-surface-container-low border-y border-outline-variant/30" id="artesania">
+      <div class="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Dos imágenes del humidor de madera -->
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="relative bg-surface-container-lowest p-2 shadow-2xl border border-outline-variant/40 group">
+              <div class="aspect-[3/4] overflow-hidden">
+                <img alt="Puro La Capra reposando en ángulo sobre humidor de cedro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/images/humidor-reposando.jpg">
+              </div>
+              <div class="p-3 bg-surface-container mt-2">
+                <span class="font-label-sm text-[10px] text-primary uppercase tracking-widest block">Reposo en Cava</span>
+                <p class="text-xs text-on-surface font-title-lg">Curación en Cedro Español</p>
+              </div>
+            </div>
+            <div class="relative bg-surface-container-lowest p-2 shadow-2xl border border-outline-variant/40 group">
+              <div class="aspect-[3/4] overflow-hidden">
+                <img alt="Vista completa de la caja de tabacos La Capra 20 Cigar 23" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="assets/images/caja-completa.jpg">
+              </div>
+              <div class="p-3 bg-surface-container mt-2">
+                <span class="font-label-sm text-[10px] text-primary uppercase tracking-widest block">Presentación Coleccionista</span>
+                <p class="text-xs text-on-surface font-title-lg">Cofre de 20 Puros Numerados</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Narrativa de Experiencia de Cava -->
+          <div class="lg:col-span-6 flex flex-col gap-6">
+            <div class="flex items-center gap-2 text-primary">
+              <span class="material-symbols-outlined text-sm">inventory_2</span>
+              <span class="font-label-sm text-xs uppercase tracking-[0.25em]">El Cofre Humo Real</span>
+            </div>
+            <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface leading-tight">
+              Añejamiento Inmaculado: Donde la Madera y el Humo Respiran
+            </h2>
+            <p class="font-body-md text-sm md:text-base text-on-surface-variant leading-relaxed">
+              Cada cofre de cedro macizo es calibrado para actuar como un santuario higrométrico natural. Las láminas de cedro español curadas al sol absorben el exceso de aceites y desprenden aromas resinosos que maduran la tripa durante meses antes de que la vitola sea encendida.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 bg-surface-container border border-outline-variant/30 flex gap-3 items-start">
+                <span class="material-symbols-outlined text-primary text-xl">straighten</span>
+                <div>
+                  <h4 class="font-title-lg text-sm text-on-surface">Cierre Hermético</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Herrajes en bronce dorado para preservar la humedad al 70% sin fugas.</p>
+                </div>
+              </div>
+              <div class="p-4 bg-surface-container border border-outline-variant/30 flex gap-3 items-start">
+                <span class="material-symbols-outlined text-primary text-xl">fingerprint</span>
+                <div>
+                  <h4 class="font-title-lg text-sm text-on-surface">Grabado Pirolítico</h4>
+                  <p class="text-xs text-on-surface-variant mt-1">Sello oficial de fábrica y firma a mano del maestro de mesa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTENCIÓN LOCAL & CIGAR LOUNGE INTERACTIVO -->
+    <section class="w-full py-20 bg-surface" id="lounges">
+      <div class="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 text-primary mb-2">
+            <span class="material-symbols-outlined text-sm">pin_drop</span>
+            <span class="font-label-sm text-xs uppercase tracking-[0.28em]">Red de Cavas & Lounges Autorizados</span>
+          </div>
+          <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface">Encuentra La Capra en Lounge & Tiendas Exclusivas</h2>
+          <p class="font-body-md text-sm text-on-surface-variant mt-3">
+            Espacios donde degustar nuestras vitolas con servicio de sommelier de tabaco y maridajes privados de destilados nobles.
+          </p>
+          
+          <!-- Selector / Buscador Dinámico de Ciudades -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+            <button data-city="santo-domingo" class="city-tab-btn px-4 py-2 bg-primary text-on-primary font-label-sm text-xs uppercase tracking-wider font-bold shadow-md">Santo Domingo</button>
+            <button data-city="santiago" class="city-tab-btn px-4 py-2 bg-surface-container text-on-surface-variant hover:text-primary border border-outline-variant/40 font-label-sm text-xs uppercase tracking-wider transition-colors">Santiago de los Caballeros</button>
+            <button data-city="punta-cana" class="city-tab-btn px-4 py-2 bg-surface-container text-on-surface-variant hover:text-primary border border-outline-variant/40 font-label-sm text-xs uppercase tracking-wider transition-colors">Punta Cana</button>
+            <button data-city="miami" class="city-tab-btn px-4 py-2 bg-surface-container text-on-surface-variant hover:text-primary border border-outline-variant/40 font-label-sm text-xs uppercase tracking-wider transition-colors">Miami (Brickell)</button>
+            <button data-city="madrid" class="city-tab-btn px-4 py-2 bg-surface-container text-on-surface-variant hover:text-primary border border-outline-variant/40 font-label-sm text-xs uppercase tracking-wider transition-colors">Madrid (Salamanca)</button>
+          </div>
+        </div>
+
+        <!-- Tarjeta Destacada de Lounge & Boutique -->
+        <div class="bg-surface-container-low border border-outline-variant/40 shadow-2xl p-6 md:p-10 relative overflow-hidden">
+          <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-[90px] pointer-events-none"></div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <!-- Info Local / Business -->
+            <div class="lg:col-span-7 flex flex-col gap-5">
+              <div class="flex items-center gap-3">
+                <span id="lounge-tag" class="px-2.5 py-1 bg-band-emerald/80 text-on-surface font-label-sm text-[10px] uppercase tracking-widest">Sede Central & Flagship</span>
+                <span class="flex items-center gap-1 text-emerald-400 font-label-sm text-[10px] tracking-wider uppercase">
+                  <span class="material-symbols-outlined text-xs">verified</span> LocalBusiness Verificado
+                </span>
+              </div>
+              
+              <h3 id="lounge-title" class="font-headline-md text-2xl md:text-3xl text-on-surface">Cava & Lounge Privado "Humo Real Santo Domingo"</h3>
+              
+              <div class="flex flex-col gap-2 text-sm text-on-surface-variant font-body-sm">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-base">location_on</span>
+                  <span id="lounge-address">Av. República de Colombia 23, Santo Domingo, R.D.</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-base">schedule</span>
+                  <span id="lounge-hours">Martes a Domingo: 16:00 - 01:00 AM (Acceso previa confirmación de mesa)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-base">call</span>
+                  <span id="lounge-phone">Concierge Desk: +1 (809) 582-CAPRA</span>
+                </div>
+              </div>
+
+              <!-- Map Viewer Container -->
+              <div class="mt-4 mb-2 overflow-hidden border border-outline-variant/40 shadow-xl bg-surface-container-lowest/80 p-1.5">
+                <div class="flex items-center justify-between px-2 py-1.5 mb-1.5 border-b border-outline-variant/20 text-xs">
+                  <div class="flex items-center gap-1.5 text-primary">
+                    <span class="material-symbols-outlined text-sm">map</span>
+                    <span class="font-label-sm text-[10px] uppercase tracking-widest font-semibold">Ubicación Satelital & Cómo Llegar</span>
+                  </div>
+                  <a id="lounge-map-link" href="https://maps.google.com/?q=18.506416,-69.984891" target="_blank" rel="noopener noreferrer" class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1">
+                    Abrir en Maps <span class="material-symbols-outlined text-xs">open_in_new</span>
+                  </a>
+                </div>
+                
+                <div class="relative w-full h-[320px] overflow-hidden" style="border-radius: 10px;">
+                  <iframe id="lounge-map-iframe" src="https://maps.google.com/maps?q=18.506416,-69.984891&hl=es&z=17&output=embed" width="100%" height="100%" style="border:0; filter: contrast(1.05) brightness(0.9); display:block;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                  <div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+                    <div class="relative flex flex-col items-center -translate-y-4">
+                      <div class="mb-1 px-2.5 py-1 bg-surface-container-lowest/95 backdrop-blur-md border border-primary/40 shadow-2xl flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-band-scarlet animate-pulse"></span>
+                        <span id="lounge-pin-text" class="font-label-sm text-[9px] text-primary tracking-wider uppercase whitespace-nowrap font-bold">La Capra Cigars • Av. Rep. de Colombia 23</span>
+                      </div>
+                      <div class="relative flex items-center justify-center">
+                        <span class="absolute w-8 h-8 rounded-full bg-band-scarlet/30 animate-ping"></span>
+                        <svg class="w-9 h-9 drop-shadow-[0_4px_10px_rgba(0,0,0,0.85)] filter" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" fill="#A31621" stroke="#F4D06F" stroke-width="1.5"></path>
+                          <circle cx="12" cy="9" r="3.5" fill="#141312" stroke="#ffe088" stroke-width="1.2"></circle>
+                        </svg>
+                      </div>
+                      <div class="w-3 h-1 bg-black/60 rounded-full blur-[1px] mt-0.5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Amenities del Lounge -->
+              <div class="pt-2">
+                <span class="font-label-sm text-[10px] text-primary uppercase tracking-widest block mb-2">Servicios & Amenities Exclusivos:</span>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div class="bg-surface-container p-3 border border-outline-variant/20 flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-primary text-base">meeting_room</span>
+                    <strong class="text-xs text-on-surface font-title-lg">Walk-in Humidor</strong>
+                    <span class="text-[11px] text-on-surface-variant">Climatizado a 70% HR constante.</span>
+                  </div>
+                  <div class="bg-surface-container p-3 border border-outline-variant/20 flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-primary text-base">wine_bar</span>
+                    <strong class="text-xs text-on-surface font-title-lg">Sommelier de Tabaco</strong>
+                    <span class="text-[11px] text-on-surface-variant">Guía de corte, encendido y maridaje.</span>
+                  </div>
+                  <div class="bg-surface-container p-3 border border-outline-variant/20 flex flex-col gap-1">
+                    <span class="material-symbols-outlined text-primary text-base">liquor</span>
+                    <strong class="text-xs text-on-surface font-title-lg">Bar de Destilados</strong>
+                    <span class="text-[11px] text-on-surface-variant">Rones de solera y tequilas añejos.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Reserva de Mesa de Cata -->
+            <div class="lg:col-span-5 bg-surface-container/95 border border-outline-variant/40 shadow-2xl p-6 md:p-8 flex flex-col justify-between relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-[60px] pointer-events-none"></div>
+              <div class="relative z-10">
+                <div class="flex items-center gap-2 mb-2 text-primary">
+                  <span class="material-symbols-outlined text-base">wine_bar</span>
+                  <span class="font-label-sm text-[10px] uppercase tracking-[0.24em] font-semibold">Atención Personalizada</span>
+                </div>
+                <h4 class="font-headline-sm text-xl md:text-2xl text-on-surface tracking-wide">Reservar Mesa de Cata Privada</h4>
+                <p class="font-body-sm text-xs text-on-surface-variant mt-2 leading-relaxed">
+                  Asegure su butaca exclusiva en nuestro santuario de cata para una experiencia sensorial guiada por nuestro sommelier maestro.
+                </p>
+                <form id="reservation-form" class="flex flex-col gap-4 mt-6">
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-sm text-[10px] text-primary/90 uppercase tracking-[0.16em]">Nombre & Apellidos</label>
+                    <input class="w-full bg-surface-container-lowest text-on-surface px-3.5 py-2.5 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary placeholder-on-surface-variant/40 transition-colors" placeholder="ej. Don Carlos Martínez" required="" type="text">
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-sm text-[10px] text-primary/90 uppercase tracking-[0.16em]">Teléfono / WhatsApp Directo</label>
+                    <input class="w-full bg-surface-container-lowest text-on-surface px-3.5 py-2.5 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary placeholder-on-surface-variant/40 transition-colors" placeholder="+1 (809) 000-0000" required="" type="tel">
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-sm text-[10px] text-primary/90 uppercase tracking-[0.16em]">Fecha Deseada</label>
+                      <input class="w-full bg-surface-container-lowest text-on-surface px-3 py-2.5 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary text-on-surface-variant transition-colors" required="" type="date">
+                    </div>
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-sm text-[10px] text-primary/90 uppercase tracking-[0.16em]">Turno de Degustación</label>
+                      <select class="w-full bg-surface-container-lowest text-on-surface px-3 py-2.5 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary transition-colors">
+                        <option>17:00 hrs — Tardeo & Café</option>
+                        <option selected="">19:30 hrs — Turno Principal</option>
+                        <option>21:30 hrs — Maridaje Solera</option>
+                        <option>23:00 hrs — Cierre Nocturno</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-sm text-[10px] text-primary/90 uppercase tracking-[0.16em]">Preferencia de Sala</label>
+                    <select class="w-full bg-surface-container-lowest text-on-surface px-3 py-2.5 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary transition-colors">
+                      <option>Salón Principal & Walk-in Humidor</option>
+                      <option>Sala Privada de Destilados & Barricas</option>
+                      <option>Terraza al Aire Libre & Cigar Lounge</option>
+                    </select>
+                  </div>
+                  <button class="w-full mt-3 py-3 bg-gradient-to-r from-primary to-primary-container hover:from-gold-leaf-bright hover:to-primary text-on-primary font-label-sm text-xs uppercase tracking-[0.2em] font-bold transition-all duration-300 shadow-lg flex items-center justify-center gap-2" type="submit">
+                    <span class="material-symbols-outlined text-sm">check_circle</span>
+                    <span>Confirmar Mesa con Sommelier</span>
+                  </button>
+                  <p class="text-center font-label-sm text-[9px] text-on-surface-variant/70 uppercase tracking-widest mt-1">Confirmación inmediata vía Concierge Desk</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUÍAS DEL AFICIONADO -->
+    <section class="w-full py-20 bg-surface-container-lowest border-t border-outline-variant/30" id="guias">
+      <div class="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <div class="flex items-center gap-2 text-primary mb-2">
+              <span class="material-symbols-outlined text-sm">local_library</span>
+              <span class="font-label-sm text-xs uppercase tracking-[0.25em]">La Biblioteca del Humo</span>
+            </div>
+            <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface">Guías del Aficionado & Sabiduría Tabacalera</h2>
+            <p class="font-body-md text-sm text-on-surface-variant mt-2 max-w-xl">
+              Artículos de fondo y guías maestras para perfeccionar el corte, el encendido, el maridaje y el cuidado de tu colección de tabacos.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-2 font-label-sm text-xs text-primary uppercase tracking-widest hover:underline" href="#">
+            Ver todas las publicaciones <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Guía 1 -->
+          <article class="bg-surface-container p-6 border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+            <div>
+              <span class="font-label-sm text-[10px] text-primary uppercase tracking-widest block mb-2">Maridajes Nobles</span>
+              <h3 class="font-title-lg text-base text-on-surface group-hover:text-primary transition-colors leading-snug">
+                El Arte del Maridaje: Puros de Capa Maduro con Ron Añejo y Café Expreso
+              </h3>
+              <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
+                Descubre cómo las notas terrosas y achocolatadas del maduro interactúan con destilados caribeños de alta solera y tuestes profundos.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Lectura: 6 min</span>
+              <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">east</span>
+            </div>
+          </article>
+          
+          <!-- Guía 2 -->
+          <article class="bg-surface-container p-6 border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+            <div>
+              <span class="font-label-sm text-[10px] text-primary uppercase tracking-widest block mb-2">Anatomía del Puro</span>
+              <h3 class="font-title-lg text-base text-on-surface group-hover:text-primary transition-colors leading-snug">
+                Guía Maestra de Vitolas y Calibres: Desde el Robusto 50 al Gran Toro 58
+              </h3>
+              <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
+                Entendiendo la relación entre cepo, longitud y temperatura de combustión. Cómo el calibre altera la proporción de capa y tripa.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Lectura: 8 min</span>
+              <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">east</span>
+            </div>
+          </article>
+          
+          <!-- Guía 3 -->
+          <article class="bg-surface-container p-6 border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+            <div>
+              <span class="font-label-sm text-[10px] text-primary uppercase tracking-widest block mb-2">Conservación de Cava</span>
+              <h3 class="font-title-lg text-base text-on-surface group-hover:text-primary transition-colors leading-snug">
+                Preservación Sagrada: Cómo mantener tu humidor al 70% HR en climas tropicales
+              </h3>
+              <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
+                Consejos prácticos para calibrar higrómetros analógicos y digitales, el uso de paquetes de control Boveda® y la respiración del cedro.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Lectura: 5 min</span>
+              <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">east</span>
+            </div>
+          </article>
+          
+          <!-- Guía 4 -->
+          <article class="bg-surface-container p-6 border border-outline-variant/30 flex flex-col justify-between hover:border-primary/50 transition-all group">
+            <div>
+              <span class="font-label-sm text-[10px] text-primary uppercase tracking-widest block mb-2">Protocolo & Regalos</span>
+              <h3 class="font-title-lg text-base text-on-surface group-hover:text-primary transition-colors leading-snug">
+                La Selección Perfecta: Qué vitola regalar a un conocedor según la ocasión
+              </h3>
+              <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
+                Criterios de etiqueta para celebraciones solemnes, reuniones de directorio o sobremesas relajadas entre conocedores del buen humo.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-outline-variant/20 flex items-center justify-between">
+              <span class="font-label-sm text-[10px] text-on-surface-variant uppercase">Lectura: 7 min</span>
+              <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">east</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBRESÍA HUMIDOR PRIVADO & CLUB DE ASIGNACIÓN -->
+    <section class="w-full py-20 bg-surface relative" id="club">
+      <div class="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
+        <div class="relative bg-surface-container-lowest border border-outline-variant/40 p-8 md:p-14 shadow-2xl">
+          <div class="absolute -top-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+            <div class="lg:col-span-7 flex flex-col gap-5">
+              <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined text-sm">vpn_key</span>
+                <span class="font-label-sm text-xs uppercase tracking-[0.25em]">Membresía por Invitación & Reserva</span>
+              </div>
+              <h2 class="font-headline-lg text-3xl md:text-4xl text-on-surface">
+                El Humidor Privado <span class="italic text-primary font-normal">La Capra</span>
+              </h2>
+              <p class="font-body-md text-sm md:text-base text-on-surface-variant leading-relaxed">
+                Un círculo de asignación exclusiva para aficionados que desean asegurar lotes numerados de fábrica antes de que salgan a salones comerciales, con cofres personalizados en fuego y degustaciones a puerta cerrada.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="flex items-start gap-2 text-xs text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-base">check</span>
+                  <span>Prioridad en vitolas de tirada única</span>
+                </div>
+                <div class="flex items-start gap-2 text-xs text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-base">check</span>
+                  <span>Cofres con grabado de iniciales en fuego</span>
+                </div>
+                <div class="flex items-start gap-2 text-xs text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-base">check</span>
+                  <span>Invitación a salones de cata en Santiago y Miami</span>
+                </div>
+                <div class="flex items-start gap-2 text-xs text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-base">check</span>
+                  <span>Concierge personal para pedidos especiales</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulario de Ingreso -->
+            <div class="lg:col-span-5 bg-surface-container p-6 border border-outline-variant/40 shadow-xl">
+              <h4 class="font-title-lg text-lg text-on-surface">Solicitar Membresía de Cava</h4>
+              <p class="text-xs text-on-surface-variant mt-1 mb-4">Complete sus datos para entrar a la lista de espera de asignación.</p>
+              <form id="membership-form" class="flex flex-col gap-3">
+                <div>
+                  <label class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider block mb-1">Nombre Completo</label>
+                  <input class="w-full bg-surface-container-lowest text-on-surface px-3 py-2 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary" placeholder="ej. Don Alejandro Morales" required="" type="text">
+                </div>
+                <div>
+                  <label class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider block mb-1">Correo Electrónico Privado</label>
+                  <input class="w-full bg-surface-container-lowest text-on-surface px-3 py-2 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary" placeholder="ej. aficionado@club.com" required="" type="email">
+                </div>
+                <div>
+                  <label class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider block mb-1">Vitola Favorita de Referencia</label>
+                  <select class="w-full bg-surface-container-lowest text-on-surface px-3 py-2 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary">
+                    <option>Toro Maduro Barrica (Media-Fuerte)</option>
+                    <option>Habano Selección Cava (Media)</option>
+                    <option>Connecticut Reserva Seda (Suave-Media)</option>
+                    <option>Surtido Personalizado para Cava</option>
+                  </select>
+                </div>
+                <div class="flex items-center gap-2 pt-1">
+                  <input class="accent-primary" id="age-check" required="" type="checkbox">
+                  <label class="text-[11px] text-on-surface-variant font-label-sm uppercase select-none cursor-pointer" for="age-check">
+                    Certifico tener más de 21 años de edad
+                  </label>
+                </div>
+                <button class="w-full mt-2 py-3 bg-primary hover:bg-gold-leaf-bright text-on-primary font-label-sm text-xs uppercase tracking-[0.2em] font-bold transition-all shadow-md" type="submit">
+                  Enviar Solicitud a la Cava
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER INTEGRAL -->
+  <footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30">
+    <div class="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start pb-12 border-b border-outline-variant/20">
+        <!-- Identidad con Logo Oficial -->
+        <div class="md:col-span-4 flex flex-col gap-4">
+          <div class="flex items-center gap-3">
+            <img alt="La Capra Cigars Logo Oficial" class="h-14 w-auto object-contain filter drop-shadow shrink-0" src="assets/images/logo-oficial.png">
+            <div>
+              <span class="font-headline-sm text-lg text-primary uppercase font-bold tracking-widest block">LA CAPRA CIGARS</span>
+              <span class="font-label-sm text-[9px] text-on-surface-variant uppercase tracking-[0.2em]">Santiago De Los Caballeros • Cava 2023</span>
+            </div>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed max-w-sm">
+            Elaborado a mano con tripas largas añejadas en la República Dominicana. Cuatro generaciones de celo artesanal y pasión por el tabaco premium.
+          </p>
+        </div>
+
+        <!-- Enlaces -->
+        <div class="md:col-span-2 flex flex-col gap-3">
+          <span class="font-label-md text-xs uppercase text-primary tracking-[0.16em]">Directorio</span>
+          <div class="flex flex-col gap-2 text-xs">
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#catalogo">Catálogo de Vitolas</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#artesania">Cava & Humidores</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#lounges">Lounge Santiago & SD</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#guias">Guías del Aficionado</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#club">Humidor Privado</a>
+          </div>
+        </div>
+
+        <!-- Ciudades & Presencia -->
+        <div class="md:col-span-3 flex flex-col gap-3">
+          <span class="font-label-md text-xs uppercase text-primary tracking-[0.16em]">Presencia & Cavas</span>
+          <div class="flex flex-col gap-1.5 text-xs text-on-surface-variant">
+            <span>• Santiago de los Caballeros (Cava Madre)</span>
+            <span>• Santo Domingo (Av. República de Colombia 23)</span>
+            <span>• Punta Cana (Cap Cana Marina)</span>
+            <span>• Miami, FL (Brickell Vault)</span>
+            <span>• Madrid (Distrito Salamanca)</span>
+          </div>
+        </div>
+
+        <!-- Suscripción a Gazette -->
+        <div class="md:col-span-3 flex flex-col gap-3">
+          <span class="font-label-md text-xs uppercase text-primary tracking-[0.16em]">Gazette del Sommelier</span>
+          <p class="text-xs text-on-surface-variant">Reciba noticias sobre aperturas de barricas y lanzamientos de nuevas cosechas.</p>
+          <form id="newsletter-form" class="flex items-center gap-2 mt-1">
+            <input class="w-full bg-surface-container text-on-surface px-3 py-2 text-xs border border-outline-variant/40 focus:outline-none focus:border-primary placeholder-on-surface-variant/40" placeholder="Su correo electrónico" required="" type="email">
+            <button class="px-3 py-2 bg-primary text-on-primary font-label-sm text-xs uppercase tracking-wider font-bold hover:bg-gold-leaf-bright transition-colors" type="submit">Unirse</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Legal Notice & Copyright -->
+      <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left text-xs text-on-surface-variant font-label-sm">
+        <p class="tracking-wider uppercase">
+          Aviso Legal de Edad: Debe tener al menos 21 años para adquirir tabaco. Fumar es perjudicial para la salud.
+        </p>
+        <p class="tracking-wider uppercase">
+          © 2024 - 2026 La Capra Cigars SRL. Hecho en República Dominicana. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modular Main Script -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

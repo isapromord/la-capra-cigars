@@ -1,0 +1,82 @@
+/* ==========================================================================
+   LA CAPRA CIGARS — Design System & Custom Styles
+   Luxury Tobacco Boutique • Santiago de los Caballeros, R.D.
+   ========================================================================== */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #141312;
+    color: #e6e1df;
+    font-family: 'Cinzel', serif;
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0e0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #363433;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Gold Text Shimmer & Glow */
+.gold-glow {
+  text-shadow: 0 0 18px rgba(244, 208, 111, 0.35);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(244, 208, 111, 0.6);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.18);
+}
+
+/* Hairline Gilded Border */
+.hairline-gold {
+  border: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.hairline-gold:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Atmospheric Ambient Vignette */
+.ambient-cigar-glow {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 40px rgba(138, 60, 27, 0.15);
+}
+
+/* Toast Notification Animation */
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-animate {
+  animation: slideDownFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

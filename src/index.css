@@ -116,3 +116,104 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* ==========================================================================
+   AMBIENT LUXURY CIGAR SMOKE ANIMATIONS (Option A)
+   Smooth, organic, 60 FPS GPU-accelerated motion
+   ========================================================================== */
+
+@keyframes smokeRiseSlow {
+  0% {
+    transform: translateY(25%) scaleX(0.88) translateX(0) rotate(-1deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.38;
+  }
+  50% {
+    transform: translateY(-40%) scaleX(1.18) translateX(25px) rotate(1.8deg);
+    opacity: 0.45;
+  }
+  80% {
+    opacity: 0.22;
+  }
+  100% {
+    transform: translateY(-115%) scaleX(1.35) translateX(-20px) rotate(-1.5deg);
+    opacity: 0;
+  }
+}
+
+@keyframes smokeRiseMid {
+  0% {
+    transform: translateY(20%) scaleX(1.1) translateX(0) rotate(1deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.42;
+  }
+  55% {
+    transform: translateY(-55%) scaleX(0.92) translateX(-30px) rotate(-2deg);
+    opacity: 0.36;
+  }
+  85% {
+    opacity: 0.18;
+  }
+  100% {
+    transform: translateY(-125%) scaleX(1.25) translateX(25px) rotate(2deg);
+    opacity: 0;
+  }
+}
+
+@keyframes smokeDrift {
+  0% {
+    transform: scale(1) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.08) translateY(-4%) rotate(0.8deg);
+  }
+  100% {
+    transform: scale(1.02) translateY(2%) rotate(-0.8deg);
+  }
+}
+
+.smoke-rise-slow {
+  animation: smokeRiseSlow 28s infinite linear;
+  will-change: transform, opacity;
+}
+
+.smoke-rise-mid {
+  animation: smokeRiseMid 34s infinite linear -12s;
+  will-change: transform, opacity;
+}
+
+.smoke-rise-deep {
+  animation: smokeRiseSlow 40s infinite linear -20s;
+  will-change: transform, opacity;
+}
+
+.smoke-rise-ribbon-1 {
+  animation: smokeRiseMid 24s infinite linear -6s;
+  will-change: transform, opacity;
+}
+
+.smoke-rise-ribbon-2 {
+  animation: smokeRiseSlow 32s infinite linear -16s;
+  will-change: transform, opacity;
+}
+
+.smoke-drift-base {
+  animation: smokeDrift 45s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .smoke-rise-slow,
+  .smoke-rise-mid,
+  .smoke-rise-deep,
+  .smoke-rise-ribbon-1,
+  .smoke-rise-ribbon-2,
+  .smoke-drift-base {
+    animation: none !important;
+    opacity: 0.15 !important;
+  }
+}

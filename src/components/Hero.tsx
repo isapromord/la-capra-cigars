@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#0f0e0d] via-[#141312] to-[#141312] py-16 lg:py-24 border-b border-[#4d4635]/20">
+    <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#0f0e0d]/85 via-[#141312]/65 to-[#141312]/80 py-16 lg:py-24 border-b border-[#4d4635]/20">
       <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[750px] h-[550px] bg-[#f2ca50]/10 rounded-full blur-[160px] pointer-events-none"></div>
       <div className="absolute right-0 top-1/4 w-[450px] h-[450px] bg-[#2B1A12]/40 rounded-full blur-[140px] pointer-events-none"></div>
       

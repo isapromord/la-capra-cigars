@@ -7,7 +7,7 @@ interface CatalogoVitolasProps {
 
 export const CatalogoVitolas: React.FC<CatalogoVitolasProps> = ({ onSelectVitola }) => {
   return (
-    <section className="w-full py-20 bg-[#141312]" id="catalogo">
+    <section className="w-full py-20 bg-[#141312]/80 backdrop-blur-[1px] relative z-10" id="catalogo">
       <div className="max-w-[1360px] mx-auto px-4 md:px-8 lg:px-12">
         
         {/* Section Header */}

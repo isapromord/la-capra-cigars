@@ -9,6 +9,7 @@ import { GuiasAficionado } from './components/GuiasAficionado';
 import { ClubMembresia } from './components/ClubMembresia';
 import { Footer } from './components/Footer';
 import { AsignacionModal } from './components/AsignacionModal';
+import { AmbientSmoke } from './components/AmbientSmoke';
 
 export default function App() {
   const [selectedVitolaForAllocation, setSelectedVitolaForAllocation] = useState<VitolaItem | null>(null);
@@ -27,13 +28,16 @@ export default function App() {
   };
 
   return (
-    <div className="bg-[#141312] font-body-md text-[#e6e1df] antialiased selection:bg-[#d4af37] selection:text-[#554300] min-h-screen flex flex-col relative">
+    <div className="bg-[#141312] font-body-md text-[#e6e1df] antialiased selection:bg-[#d4af37] selection:text-[#554300] min-h-screen flex flex-col relative overflow-x-hidden">
       
+      {/* AMBIENT CIGAR SMOKE (OPTION A: SVG Turbulence + GPU CSS) */}
+      <AmbientSmoke />
+
       {/* NAVBAR HEADER */}
       <Navbar />
 
       {/* MAIN CONTENT */}
-      <main className="w-full pt-16 sm:pt-18 md:pt-20 bg-[#141312] flex-1">
+      <main className="w-full pt-16 sm:pt-18 md:pt-20 bg-transparent flex-1 relative z-10">
         {/* HERO SECTION EDITORIAL */}
         <Hero />
 

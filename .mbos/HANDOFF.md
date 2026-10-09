@@ -1,24 +1,16 @@
-# LA CAPRA CIGARS — HANDOFF.md
-
 ## Estado Actual del Proyecto
-- **Fecha de Importación:** 2026-10-09
-- **Fuente de Origen:** Google AI Studio / Stitch (`stitch_luxury_cigar_brand_showcase.zip` y carpeta de medios `Downloads/La Capra`).
-- **Estado:** Proyecto completamente importado, modularizado e independizado de URLs externas de Google CDN.
-- **Carpetas creadas:**
-  - `assets/css/`: `style.css` con estilos de marca, efectos de brillo dorado y scrollbar personalizado.
-  - `assets/js/`: `main.js` con soporte para menú móvil, selector interactivo de lounges con mapas dinámicos por ciudad, y gestión de reservas.
-  - `assets/images/`: Logotipos, fotografías en alta definición, sellos oficiales y fotos de fábrica.
-  - `assets/videos/`: Videos Reels de fabricación artesanal de puros.
-  - `assets/docs/`: `DESIGN.md` con las especificaciones del Design System.
-  - `index.html`: Estructura semántica, SEO y OpenGraph integrados.
-
-## Pruebas en Localhost
-- Servidor local probado y verificado.
-- Todos los assets cargan con código HTTP 200 sin dependencias caídas.
+- **Fecha de Importación Actualizada:** 2026-10-09
+- **Fuente de Origen:** Exportación oficial de Google AI Studio (`la-capra-cigars-—-humo-real-dominicano.zip`).
+- **Arquitectura:** **Vite 8 + React 19 + TypeScript + Tailwind CSS 4 + Motion**.
+- **Características de la Nueva Versión Integrada:**
+  - **Carrusel Animado en Hero:** Transición Cross-Dissolve y Ken Burns automático cada 4 segundos con indicadores interactivos y badges dinámicos.
+  - **Logo Oficial:** Proporción refinada y estilizada en la barra de navegación con efectos de iluminación dorada.
+  - **Limpieza de Bloques Obsoletos:** Eliminados los bloques redundantes que se retiraron en Google AI Studio.
+  - **Componentes Modulares:** `Hero.tsx`, `Navbar.tsx`, `Marquee.tsx`, `CatalogoVitolas.tsx`, `LoungeSection.tsx`, `GuiasAficionado.tsx`, `ClubMembresia.tsx`, `AsignacionModal.tsx`, `Footer.tsx`.
+- **Servidor Local Activo:** Vite corriendo en `http://localhost:3000/`.
 
 ## Próximos Pasos (Roadmap)
-1. **Refinamiento de Contenido:** Revisión visual y ajustes de textos o vitolas según indicaciones del usuario.
+1. **Verificación en Localhost:** Revisión del usuario en `http://localhost:3000/`.
 2. **Creación de Repositorio en GitHub:**
    - Cuenta: `isapromord` (https://github.com/isapromord).
-   - Nombre de repo: `isapromord/la-capra-cigars`.
    - Comando directo: `gh repo create isapromord/la-capra-cigars --public --source=. --push`.

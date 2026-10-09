@@ -1,0 +1,6 @@
+{
+  "name": "La Capra Cigars — Humo Real Dominicano",
+  "description": "Cava privada de tabacos añejados con devoción litúrgica en Santiago de los Caballeros. Catálogo de vitolas y cigar lounges exclusivos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

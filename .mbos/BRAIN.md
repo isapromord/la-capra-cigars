@@ -20,33 +20,38 @@
 - **Headlines:** `Playfair Display`, serif.
 - **Body & Labels:** `Cinzel`, serif (Tracking amplio: `0.14em` - `0.28em` en mayúsculas).
 
-## 4. Estructura de Directorios Modular
+## 4. Estructura de Directorios Modular (Vite + React + TypeScript)
 ```text
 la-capra-cigars/
-├── .mbos/
+├── .mbos/                             # Gobierno y memoria MBOS369
 │   ├── BRAIN.md
 │   ├── HANDOFF.md
 │   └── MEMORY.md
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── main.js
-│   ├── images/
-│   │   ├── logo-oficial.png
-│   │   ├── logo-emblem.png
-│   │   ├── hero-puro-mano.jpg
-│   │   ├── maduro-don-julio.jpg
-│   │   ├── habano-2023-cofre.jpg
-│   │   ├── connecticut-anilla.jpg
-│   │   ├── humidor-reposando.jpg
-│   │   └── caja-completa.jpg
-│   ├── videos/
-│   │   └── (reels de elaboración de puros)
-│   └── docs/
-│       └── DESIGN.md
-├── index.html
-└── .gitignore
+├── public/                            # Assets públicos estáticos (imágenes, logos, videos)
+│   └── images/
+├── src/                               # Código fuente modular
+│   ├── assets/                        # Imágenes optimizadas
+│   ├── components/                    # Componentes modulares
+│   │   ├── Hero.tsx                   # Hero con carrusel animado (Ken Burns & Cross-Dissolve)
+│   │   ├── Navbar.tsx                 # Barra de navegación con logo escalado y links directos
+│   │   ├── Marquee.tsx                # Marquee de cata
+│   │   ├── CatalogoVitolas.tsx        # Fichas de cata y vitolas
+│   │   ├── LoungeSection.tsx          # Lounges con mapa y reservas
+│   │   ├── GuiasAficionado.tsx        # Artículos de cata y maridaje
+│   │   ├── ClubMembresia.tsx          # Formulario de membresía de cava
+│   │   ├── AsignacionModal.tsx        # Modal interactivo de asignación
+│   │   └── Footer.tsx                 # Footer integral
+│   ├── data/                          # Data estructurada (vitolas, imágenes, textos)
+│   │   ├── lacapra.ts
+│   │   └── vitolas.ts
+│   ├── types/                         # Tipos TypeScript
+│   ├── App.tsx                        # Aplicación principal
+│   ├── main.tsx                       # Entrypoint React 19
+│   └── index.css                      # Estilos globales y Tailwind CSS
+├── index.html                         # Host HTML
+├── package.json                       # Dependencias (React 19, Vite 8, Tailwind 4, Motion)
+├── tsconfig.json                      # Configuración TypeScript
+└── vite.config.ts                     # Configuración de Vite
 ```
 
 ## 5. Destino de Despliegue

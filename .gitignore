@@ -1,12 +1,8 @@
-# OS metadata
-.DS_Store
-Thumbs.db
-
-# Dependencies & Build
 node_modules/
+build/
 dist/
-.cache/
-
-# Environment
-.env
-.env.local
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example

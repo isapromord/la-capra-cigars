@@ -7,8 +7,9 @@
   - Efecto inmediato al abrir la página (pre-warmed across viewport).
   - 3 tendones sinuosos en curvas de Bézier ondulantes (emulando el humo continuo del puro encendido).
   - Interactividad con el mouse (brisa atmosférica al mover el cursor).
-  - Fondos de secciones (`Hero`, `CatalogoVitolas`, `LoungeSection`, `GuiasAficionado`, `ClubMembresia`) ajustados a transparentes para que el humo viaje nítidamente **detrás de los textos, tarjetas, bloques e imágenes**.
-  - Mini-controlador discreto en la esquina inferior izquierda con 3 niveles: **Sutil**, **Elegante**, **Intenso**.
+- **Capa de Humo Real en Primer Plano (On Top):**
+  - Elevada a `z-30` para flotar sutilmente **por encima de todas las letras, tarjetas, bloques e imágenes**, con `mix-blend-mode: screen` y `pointer-events-none`.
+  - Mantiene intacta la física de brisa reactiva al cursor del mouse y la posibilidad de calibrar la intensidad en el selector.
 - **Barra de Navegación & Footer Calibrados:**
   - El logo del Footer fue restaurado a su tamaño original equilibrado y limpio (`h-12` a `h-16`).
   - El logo de la cabecera (Navbar) se calibró con precisión a exactamente el **doble (2x)** de su tamaño original (`h-14` a `h-18` sobre el PNG recortado), con altura de barra elegante (`h-20` a `h-24`), logrando una escala lujosa, visible y armónica sin saturar.

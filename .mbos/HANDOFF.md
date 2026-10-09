@@ -12,10 +12,13 @@
 - **Barra de Navegación & Logo:**
   - Logo duplicado de tamaño (`h-18` a `h-26` / hasta 220px de ancho) para máxima presencia y legibilidad del emblema dorado.
   - Altura del header ajustada a `min-h-[88px] sm:min-h-[104px] md:min-h-[114px]` con padding superior en `<main>` para conservar holgura y simetría editorial.
+- **Repositorio Remoto en GitHub:**
+  - URL: **`https://github.com/isapromord/la-capra-cigars`**
+  - Rama: `main`
+  - Estado: Sincronizado y publicado con documentación de autor en `README.md`.
 - **Servidor Local Activo:** Vite corriendo en `http://localhost:3000/`.
 
-## Próximos Pasos (Roadmap)
-1. **Confirmación Visual del Usuario:** Validar el logo ampliado en `http://localhost:3000/`.
-2. **Creación y Push al Repositorio en GitHub:**
-   - Cuenta: `isapromord` (https://github.com/isapromord).
-   - Comando directo: `gh repo create isapromord/la-capra-cigars --public --source=. --push`.
+## Estado del Proyecto
+- **100% Completo y Publicado en GitHub.**
+- Importación desde Google AI Studio realizada con éxito.
+- Refinamientos editoriales, animaciones Ken Burns, logo duplicado y motor de humo real completados.

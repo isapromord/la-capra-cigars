@@ -22,20 +22,20 @@ export const Footer: React.FC<FooterProps> = ({ onShowToast }) => {
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start pb-12 border-b border-[#4d4635]/20">
           
-          {/* Identidad con Logo Oficial (Double Sizing) */}
+          {/* Identidad con Logo Oficial */}
           <div className="md:col-span-4 flex flex-col gap-4">
-            <div className="flex items-center gap-5 sm:gap-6">
+            <div className="flex items-center gap-3.5 sm:gap-4">
               <img 
                 alt="La Capra Cigars Logo Oficial" 
                 referrerPolicy="no-referrer"
-                className="h-40 sm:h-48 md:h-52 w-auto max-w-[240px] sm:max-w-[280px] object-contain filter drop-shadow-[0_6px_24px_rgba(242,202,80,0.5)] shrink-0" 
+                className="h-12 sm:h-14 md:h-16 w-auto object-contain filter drop-shadow-[0_2px_12px_rgba(242,202,80,0.4)] shrink-0" 
                 src={IMAGES.logoOficial} 
               />
               <div className="flex flex-col justify-center">
-                <span className="font-headline-sm text-2xl sm:text-3xl text-[#f2ca50] uppercase font-bold tracking-widest block leading-tight">
+                <span className="font-headline-sm text-lg sm:text-xl text-[#f2ca50] uppercase font-bold tracking-widest block leading-tight">
                   LA CAPRA CIGARS
                 </span>
-                <span className="font-label-sm text-xs sm:text-sm text-[#d0c5af] uppercase tracking-[0.26em] mt-2">
+                <span className="font-label-sm text-[9px] sm:text-[10px] text-[#d0c5af] uppercase tracking-[0.22em] mt-1">
                   Humo Real Dominicano • 2023
                 </span>
               </div>

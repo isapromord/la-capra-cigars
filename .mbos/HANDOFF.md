@@ -7,9 +7,10 @@
   - Efecto inmediato al abrir la página (pre-warmed across viewport).
   - 3 tendones sinuosos en curvas de Bézier ondulantes (emulando el humo continuo del puro encendido).
   - Interactividad con el mouse (brisa atmosférica al mover el cursor).
-- **Capa de Humo Real en Primer Plano (On Top):**
-  - Elevada a `z-30` para flotar sutilmente **por encima de todas las letras, tarjetas, bloques e imágenes**, con `mix-blend-mode: screen` y `pointer-events-none`.
-  - Mantiene intacta la física de brisa reactiva al cursor del mouse y la posibilidad de calibrar la intensidad en el selector.
+- **Capa de Humo Real en Primer Plano (Fijada en Modo Elegante):**
+  - Elevada a `z-30` de forma fija y permanente en el modo **Elegante** (opacidad óptima `0.22`, filtro cálido cedro/oro y velocidad litúrgica a 0.65x).
+  - Se eliminaron por completo los modos alternativos (Sutil/Intenso) y el botón flotante de control, dejando la interfaz 100% limpia y despejada.
+  - Mantiene intacta la física de brisa inercial con el mouse y la aceleración por GPU.
 - **Barra de Navegación & Footer Calibrados:**
   - El logo del Footer fue restaurado a su tamaño original equilibrado y limpio (`h-12` a `h-16`).
   - El logo de la cabecera (Navbar) se calibró con precisión a exactamente el **doble (2x)** de su tamaño original (`h-14` a `h-18` sobre el PNG recortado), con altura de barra elegante (`h-20` a `h-24`), logrando una escala lujosa, visible y armónica sin saturar.

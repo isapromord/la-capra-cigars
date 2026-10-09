@@ -1,16 +1,18 @@
 ## Estado Actual del Proyecto
-- **Fecha de Importación Actualizada:** 2026-10-09
+- **Fecha de Actualización:** 2026-10-09
 - **Fuente de Origen:** Exportación oficial de Google AI Studio (`la-capra-cigars-—-humo-real-dominicano.zip`).
 - **Arquitectura:** **Vite 8 + React 19 + TypeScript + Tailwind CSS 4 + Motion**.
-- **Características de la Nueva Versión Integrada:**
-  - **Carrusel Animado en Hero:** Transición Cross-Dissolve y Ken Burns automático cada 4 segundos con indicadores interactivos y badges dinámicos.
-  - **Logo Oficial:** Proporción refinada y estilizada en la barra de navegación con efectos de iluminación dorada.
-  - **Limpieza de Bloques Obsoletos:** Eliminados los bloques redundantes que se retiraron en Google AI Studio.
-  - **Componentes Modulares:** `Hero.tsx`, `Navbar.tsx`, `Marquee.tsx`, `CatalogoVitolas.tsx`, `LoungeSection.tsx`, `GuiasAficionado.tsx`, `ClubMembresia.tsx`, `AsignacionModal.tsx`, `Footer.tsx`.
+- **Motor de Humo de Autor Activo:**
+  - `AmbientSmoke.tsx`: Motor nativo HTML5 Canvas (60 FPS) con partículas pre-renderizadas en marfil y ámbar tabaco.
+  - Efecto inmediato al abrir la página (pre-warmed across viewport).
+  - 3 tendones sinuosos en curvas de Bézier ondulantes (emulando el humo continuo del puro encendido).
+  - Interactividad con el mouse (brisa atmosférica al mover el cursor).
+  - Fondos de secciones (`Hero`, `CatalogoVitolas`, `LoungeSection`, `GuiasAficionado`, `ClubMembresia`) ajustados a transparentes para que el humo viaje nítidamente **detrás de los textos, tarjetas, bloques e imágenes**.
+  - Mini-controlador discreto en la esquina inferior izquierda con 3 niveles: **Sutil**, **Elegante**, **Intenso**.
 - **Servidor Local Activo:** Vite corriendo en `http://localhost:3000/`.
 
 ## Próximos Pasos (Roadmap)
-1. **Verificación en Localhost:** Revisión del usuario en `http://localhost:3000/`.
-2. **Creación de Repositorio en GitHub:**
+1. **Confirmación Visual del Usuario:** Refrescar `http://localhost:3000/` y validar el efecto de humo y el selector de intensidad.
+2. **Creación y Push al Repositorio en GitHub:**
    - Cuenta: `isapromord` (https://github.com/isapromord).
    - Comando directo: `gh repo create isapromord/la-capra-cigars --public --source=. --push`.

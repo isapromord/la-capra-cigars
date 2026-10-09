@@ -10,8 +10,9 @@
   - Fondos de secciones (`Hero`, `CatalogoVitolas`, `LoungeSection`, `GuiasAficionado`, `ClubMembresia`) ajustados a transparentes para que el humo viaje nítidamente **detrás de los textos, tarjetas, bloques e imágenes**.
   - Mini-controlador discreto en la esquina inferior izquierda con 3 niveles: **Sutil**, **Elegante**, **Intenso**.
 - **Barra de Navegación & Logo:**
-  - Logo duplicado de tamaño (`h-18` a `h-26` / hasta 220px de ancho) para máxima presencia y legibilidad del emblema dorado.
-  - Altura del header ajustada a `min-h-[88px] sm:min-h-[104px] md:min-h-[114px]` con padding superior en `<main>` para conservar holgura y simetría editorial.
+  - Emblema del carnero duplicado a escala monumental (`h-28` en móvil, `h-36` en tablet, `h-42` en desktop) eliminando limitaciones de `max-w`.
+  - Título ampliado a `text-2xl sm:text-3xl md:text-4xl lg:text-5xl` con `tracking-[0.18em]`.
+  - Altura del header expandida a `min-h-[110px] sm:min-h-[135px] md:min-h-[150px]` con padding superior en `<main>` (`pt-32 sm:pt-40 md:pt-46`) para armonía total.
 - **Preparación para Vercel:**
   - `vercel.json` configurado con framework `vite`, rewrites SPA (`/index.html`), cache inmutable para media/video y headers de seguridad.
   - `.npmrc` con `legacy-peer-deps=true` para garantizar instalación automatizada sin conflictos de pares en el runner de Vercel.

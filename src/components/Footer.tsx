@@ -117,6 +117,12 @@ export const Footer: React.FC<FooterProps> = ({ onShowToast }) => {
           <p className="tracking-wider uppercase">
             © 2024 La Capra Cigars SRL. Hecho en República Dominicana. Todos los derechos reservados.
           </p>
+          <p className="tracking-wider uppercase">
+            Diseño web:{' '}
+            <a href="https://isapromord.github.io/isapromord.com/?ref=lacapra" target="_blank" rel="noopener" className="text-[#f2ca50] hover:text-[#F4D06F] underline underline-offset-2 transition-colors">
+              ISAPromoRD
+            </a>
+          </p>
         </div>
 
       </div>

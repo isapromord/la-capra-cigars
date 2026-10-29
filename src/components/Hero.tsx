@@ -26,7 +26,8 @@ const HERO_SLIDES = [
 
 export const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  // Slides 2 and 3 start downloading only after the page has loaded, so they don't compete with first paint
+  // Slides 2 and 3 start downloading after page load (or 2.5s at most, before the first 4s advance),
+  // so they don't compete with first paint
   const [loadRestSlides, setLoadRestSlides] = useState(false);
 
   useEffect(() => {
@@ -35,8 +36,12 @@ export const Hero: React.FC = () => {
       enable();
       return;
     }
+    const fallback = window.setTimeout(enable, 2500);
     window.addEventListener('load', enable, { once: true });
-    return () => window.removeEventListener('load', enable);
+    return () => {
+      window.clearTimeout(fallback);
+      window.removeEventListener('load', enable);
+    };
   }, []);
 
   // Auto-advance carousel smoothly every 4 seconds (between 3 and 5s)

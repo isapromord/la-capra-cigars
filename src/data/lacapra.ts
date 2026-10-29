@@ -1,11 +1,11 @@
 export const IMAGES = {
-  logoOficial: '/logo-oficial.png',
-  heroAnillaEnMano: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAcQikAuihPuuGUZm5xaXOA6cm9t1k4ZlyRIllF9onvfVp_hdZF6fPQYvrW46FdS5s4mC2ohq79GGGDEoc1DXBlZiLv38QK6Wmu9mJeYnCtxwSUyz6fpY-EObnGvHJ2iDtr1PfPX-A8XJ_m1vbfS5kd63ChB8CUK_nhy7hoXqkSZaxWIlhcgNaxan4yWqG8BW-3w25O6AeFhJTWVjbX78h2HVCvDAmR57rG7OE_KrS1ulgpaxWZ6BtB',
-  maduroDonJulio: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDAZdPafAWaUmIAejb1lReNbZIB7JqsQTMYBAQKt4CUOkCaeINl4SZi8s_VPS4S_SXFmjk7y5txo2YQFxXPxUN48hZETan3Chwb_G2HY03PqHpp7JVN0fTo7kHewRi3ODna8avhi8ZAgnn0FkZ5bHVXVt3Zk-9UkiUA3f3GJHs7a2xyLmUIvX8mf4jqpjlXhlOL-im8Zc2YxaV5MTy-8bUXs10B4KaoxDL68D9ONB4qLbzibJ9uXHI_',
-  habanoCajaRoja: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA9BULAxn_5d4fcDCmiiXZ9Tg6DtIpmvSlra7EUFEUY5YnBHubFf2LY_H3Pu-LWw_UGd8xZ9vRviZJqeMr_um4W-4Miz8V68XG2BzCYYHNXZ8njG8gzxkhXR391tQMeAPBn8GvlfJyRn3ZJNa_1eTEtv3QrRHLXnuNRMjYjOjwGNRTUoaAZzqQ_UX3G1lK13JHzN13Rvw74ue1z8avdoH_iN5dFGX7nTwYgZR0buonGygXnLGTG9ks0',
-  connecticutEsmeralda: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwwETsSJKGH6vg6_vmCRN5AL4AcBPiWbS9FduA5GM7HPYRnuB1TANsDUx7mweyBZadJrmmyVRAnx0EypE9bUB0Vrdg5iDU5Bmuqydt0PzRiisMPHt_xlzXoQFqF4VfmrNiiEZJZK9r8LXWSvCBZhlsEG21zFM2sPhBEWJnPZsR1pgNyxQuKx5ysmxTgE7vdZsUhYhfW8Tm07IGi5aXX2CRUnYD6vtg7KE36cUfkiA29AKs6f1-ivak',
-  humidorAngulo: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB7BhuEaoIdMO9qOFSCW1kwLvPfNoLy1iTOU7NJ3nlP7RAD3abhM3L8Z3I5PyumcyfK9KDkJFuGiuiK4Mzuj_Te422z5OXjywHAZTYoupai0hSEs9JwhlEGeVwgKkpX0p2IwKahBMtph7g8_eRPe2uRgLyPayXA8f6dg5uNvKCTV4ODYS9vMBgr3-NztpdXiKO1pUopXgjUW5HwHIPzDzlhIeIU0m-XjbgO5S0jb5PvuWOBXBzJ-LZQ',
-  humidorCofreCompleto: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDwl5R3d0J1_iyAOX2D0nTzRSkUonFA0CFZOHusVoFp786iZwni_aOBlyMjroKfP1R6CQ0OVctorqvudX6aI8pLqJy4ihpBOeV6CI_UIIJxNeWgxuC-QQsgJQRb_bErj21ELYpxXLWMpZSrgFwmg2_VSaKcYfwg0aXy_-8kF2F0gzucfpydzOg9G-B-eW037hzkfyQm9-bK_A_s-UgJojjyVmQSgn4qJZhwmBquP9yZJ3ko0fxfAtgx'
+  logoOficial: '/logo-oficial.webp',
+  heroAnillaEnMano: '/images/vitolas/hero-anilla-en-mano.webp',
+  maduroDonJulio: '/images/vitolas/maduro-don-julio.webp',
+  habanoCajaRoja: '/images/vitolas/habano-caja-roja.webp',
+  connecticutEsmeralda: '/images/vitolas/connecticut-esmeralda.webp',
+  humidorAngulo: '/images/vitolas/humidor-angulo.webp',
+  humidorCofreCompleto: '/images/vitolas/humidor-cofre-completo.webp'
 };
 
 export interface VitolaItem {

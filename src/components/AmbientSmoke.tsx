@@ -100,7 +100,10 @@ export const AmbientSmoke: React.FC = () => {
           filter: 'contrast(1.2) brightness(1.02) sepia(0.18) hue-rotate(6deg)',
         }}
       >
-        <source src="/cigar-smoke-pure.mp4" type="video/mp4" />
+        <source src="/cigar-smoke-mobile.webm" type="video/webm" media="(max-width: 767px)" />
+        <source src="/cigar-smoke-mobile.mp4" type="video/mp4" media="(max-width: 767px)" />
+        <source src="/cigar-smoke.webm" type="video/webm" />
+        <source src="/cigar-smoke-720.mp4" type="video/mp4" />
       </video>
     </div>
   );

@@ -2,21 +2,21 @@ import React, { useState, useEffect } from 'react';
 
 const HERO_SLIDES = [
   {
-    url: 'https://i.postimg.cc/WzhWXMkB/Screenshot-2026-10-07-191545.png',
+    url: '/images/hero/slide-1.webp',
     title: 'Edición Limitada Oro & Azul',
     kicker: 'Anilla de Autor',
     badge: 'Capa Añejada',
     alt: 'Puro La Capra con anilla de autor de Edición Limitada Oro y Azul'
   },
   {
-    url: 'https://i.postimg.cc/y89GMXrM/Screenshot-2026-10-07-191402.png',
+    url: '/images/hero/slide-2.webp',
     title: 'Cava de Barricas & Reposo',
     kicker: 'Añejamiento Litúrgico',
     badge: 'Maduro & Habano',
     alt: 'Selección La Capra Cigars en cava de barricas'
   },
   {
-    url: 'https://i.postimg.cc/T3mszq48/Screenshot-2026-10-07-191509.png',
+    url: '/images/hero/slide-3.webp',
     title: 'Presentación Coleccionista',
     kicker: 'Cofre de Autor',
     badge: 'Cava 2023',
@@ -121,7 +121,8 @@ export const Hero: React.FC = () => {
                     >
                       <img 
                         alt={slide.alt}
-                        referrerPolicy="no-referrer"
+                        decoding="async"
+                        {...(idx === 0 ? { fetchPriority: 'high' as const } : {})}
                         className={`w-full h-full object-cover object-center filter brightness-95 transition-transform duration-[4000ms] ease-out ${
                           isActive ? 'scale-105' : 'scale-100'
                         }`} 
